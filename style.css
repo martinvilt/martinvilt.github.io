@@ -132,6 +132,12 @@ justify-content: center;
 justify-content: center;
 
 } 
+.container p{
+    display: none;
+}
+.container:hover p{
+    display: block;
+}
 .post-header {       
 
 
