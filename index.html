@@ -1,84 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Eesti maitsvaim retseptiveeb">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>COOKBOOK | Eesti maitsvaim retseptiveeb</title>
-    <link rel="stylesheet" href="style.css" /> 
-</head>
-<body>
-<header>
-    <section class="header-title">
-    <div class="title">
-        <h1>Cookbook</h1>
-        <h2>Eesti maitsvaim retseptiveeb</h2>
-    </div>    
-    </section>
-    <hr>
-    <nav>
-        <ul>
-            <li class>
-                <a href="#">Retseptid</a>
-                <a href="#">Võta ühendust</a>
-            </li>
-        </ul>
-    </nav>
-    <section class="header-banner">
-        <div class="chef">
-            <a href="#" class="header-banner">
-            <img src="img/header-banner.jpg">
-            </a>
-        </div>
-    </section>
-    
-</header>    
-<main>
-    <div class="index-header">
-        <h1>Meist</h1>
-        <p id="us">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <img src="img/kokad.png" alt="kokad">
-    </div>
-    <div class="gallery-image-title"><h1>RETSEPTID</h1></div>
-    <section class="gallery-links">
-
-        <a href="#" class="gallery-image">
-        <div class="container">
-            <img src="img/eestikook.png" alt="eesti"/>
-            <p class="post-header">Eesti köök</p>
-        </div>
-        </a>
-        <a href="#" class="gallery-image">
-        <div class="container">
-            <img src="img/asiankook.jpg" alt="aasia"/>
-            <p class="post-header">Aasia köök</p>
-        </div>
-        </a>
-        <a href="#" class="gallery-image">
-        <div class="container">
-            <img src="img/italiankook.jpg" alt="itaalia"/>
-            <p class="post-header">Itaalia köök</p>
-        </div>
-        </a>
-    </section>
-</main>
-<footer>
-    <ul class="footer-text">
-        <li>©️14/02/2021</li>
-        <li>tel: 55555555</li>
-        <li>@:email@email.com</li>
-    </ul>
-    <div class="footer-sm">
-        <a href="#">
-            <img src="img/youtube-6-32.png" alt="youtube"/>
-        </a>
-        <a href="#">
-            <img src="img/facebook-3-32.png" alt="facebook"/>
-        </a>
-        
-    </div>
-    
-</footer>
-    
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <section id="section1">
+                <h3>1. osa: Kell</h3>
+                <div id="clock"></div>
+            </section>
+            <hr>
+            <section id="section2">
+                <h3>2. osa: Vormid</h3>
+                <form id="form">
+                    <!-- input field --->
+                    <div id="input-fields">
+                        <div id="first-name">
+                            <label for="fname">Eesnimi:</label>
+                            <input type="text" id="fname" name="fname">
+                        </div>
+                        <div id="last-name">
+                            <label for="lname">Perekonnanimi:</label>
+                            <input type="text" id="lname" name="lname">
+                        </div>
+                    </div>
+                    <!-- checkbox --->
+                    <div id="form-checkbox">
+                        <div class="box">
+                            <input type="checkbox" id="v1" name="v1" value="present">
+                            <label for="vehicle1"> See on kingitus</label> <!-- 5€ --->
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" id="v2" name="v2" value="contactless">
+                            <label for="vehicle2"> Soovin kontaktivaba tarnet</label> <!-- 1€ --->
+                        </div>    
+                    </div>
+                    <!-- radio-button --->
+                    <div id="radioButton">
+                        <div class ="box">
+                            <input type="radio" id="omniva" name="kohaletoomine" value="omniva">
+                            <label for="omniva">Omniva</label>
+                            <input type="radio" id="dpd" name="kohaletoomine" value="dpd">
+                            <label for="dpd">DPD</label>
+                            <input type="radio" id="kuller" name="kohaletoomine" value="kuller">
+                            <label for="kuller">Kuller</label>
+                        </div>
+                    </div>
+                    <!-- dropdown --->
+                    <div id="dropdown">
+                        <label for="linn">Valige linn: </label>
+                        <select name="linn" id="linn">
+                            <option value="">- Valige linn -</option> 
+                            <option value="tln">Tallinn</option> <!-- 0€ --->
+                            <option value="trt">Tartu</option> <!-- 2.5€ --->
+                            <option value="nrv">Narva</option> <!-- 2.5€ --->
+                            <option value="prn">P&auml;rnu</option> <!-- 3€ --->
+                        </select>
+                    </div>
+                    <div id="calc">
+                        <input type="submit" value="Arvuta tarne hind:" id="btn-delivery">   
+                    </div>
+                    <div id="delivery"></div>
+                </form>
+            </section> 
+            <hr>
+            <section id="section3">
+                <h3>3. osa: Kaart</h3>
+                <div id="map"></div>
+            </section>
+        </main>
+        <script type='text/javascript' src="script.js"></script>
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[AqLLRE37SJGqIxXEYxezPUa6fF2oCzl3cvG4n05FtFIVBrotBYxchpMYYpwuxBak]' async defer></script>
+    </body>
 </html>
